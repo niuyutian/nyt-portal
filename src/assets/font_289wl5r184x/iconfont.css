@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1642991687764') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangshang:before {
+  content: "\f016f";
+}
+
+.icon-xiangxia:before {
+  content: "\f0170";
+}
+
+.icon-shangyi:before {
+  content: "\f0316";
+}
+
+.icon-wode-wode:before {
+  content: "\e60d";
+}
+
+.icon-erji:before {
+  content: "\e6e5";
+}
+
+.icon-noun__cc:before {
+  content: "\e604";
+}
+
+.icon-home-fill:before {
+  content: "\e867";
+}
+
+.icon-setting-fill:before {
+  content: "\e871";
+}
+
+.icon-peizhi:before {
+  content: "\e654";
+}
+
+.icon-databaseset-fill:before {
+  content: "\e7b4";
+}
+
+.icon-ruererji:before {
+  content: "\e715";
+}
+
+.icon-configure:before {
+  content: "\e61b";
+}
+
+.icon-zhima-shouquan:before {
+  content: "\e611";
+}
+
+.icon-peizhi-zhongduanpeizhi:before {
+  content: "\e61c";
+}
+
+.icon-qingning:before {
+  content: "\e7fa";
+}
+
+.icon-shiwutubiao-28:before {
+  content: "\e605";
+}
+
