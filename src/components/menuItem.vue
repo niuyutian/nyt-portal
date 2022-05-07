@@ -3,8 +3,8 @@
     <li v-for="(item,index) in list " :key="index" > 
       <div  v-show="item.open"  @click.stop="cli(item)" class="bigitem">
           <span class="iconfont i1" :class="item.icon" v-if="item.mulu=='m1'&&item.selopen==false"></span>
-          <span class="iconfont i1 i2" :class="item.icon" v-if="item.mulu=='m1'&&item.selopen==true"> </span>
-          <p class="item" :class="item.mulu">{{item.name}} <span class="iconfont icon-xiangxia"   v-show="item.selopen==false"></span>  <span class="iconfont icon-xiangshang" v-show="item.selopen==true"> </span> </p>
+          <span class="iconfont i1 i2" :class="item.icon" v-if="item.mulu=='m1'&&item.selopen"> </span>
+          <p class="item" :class="item.mulu">{{item.name}} <span class="iconfont icon-xiangxia"  v-show="item.selopen==false"></span>  <span class="iconfont icon-xiangshang" v-show="item.selopen==true"> </span> </p>
           <tree-menus :list="item.cList"></tree-menus>
       </div>
     </li>
@@ -32,7 +32,7 @@ import  "../assets/font_289wl5r184x/iconfont.css"
           else{
             if(name.cList[0].open==false){
                   name.selopen=true
-                  console.log(name);
+                  // console.log(name);
                 let a= document.querySelectorAll(".i1");
               for(let i=0;i<name.cList.length;i++){
                   name.cList[i].open=true
@@ -86,6 +86,9 @@ li{
 }
 .m3{
   font-size: 15px;
+}
+.m4{
+  font-size: 14px;
 }
 .bigitem{
   position: relative;

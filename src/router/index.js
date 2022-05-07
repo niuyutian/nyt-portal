@@ -7,6 +7,8 @@ import Index from '@/components/Index';
 import Search from '@/views/Search';
 import Play from '@/views/Play';
 import Nodepad from '@/components/Nodepad';
+import testfm from '@/views/test/index';
+
 
 
 Vue.use(VueRouter)
@@ -32,6 +34,10 @@ const routes =[
             {
                 path:'fontsicon',
                 component: Fontsicon,
+            },
+            {
+                path:'fm',
+                component: testfm,
             },
             {
                 path:'mhome',

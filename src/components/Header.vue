@@ -57,10 +57,7 @@ export default {
         return {
             // navs:this.$store.navs
             navs:[
-                {name:"百度"},
-                {name:"阿里"},
-                {name:"腾讯"},
-                {name:"京东"},
+                {name:"formTest"},
             ]
         }
     },
@@ -129,7 +126,7 @@ export default {
     .item{
         display: inline-block;
         position: relative;
-        width: 100px;
+        width: 120px;
         height: 40px;
         text-align: center;
         color: #fff;

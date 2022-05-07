@@ -20,7 +20,7 @@ export default {
             document.getElementById("time").innerHTML = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(),
                 2) + ':' + zeroPadding(cd.getSeconds(), 2);
             document.getElementById("date").innerHTML = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() +
-                1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
+                1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()]; 
             };
 
             function zeroPadding(num, digit) {
@@ -31,6 +31,7 @@ export default {
             return (zero + num).slice(-digit);
             }
             setTimeout(()=>{
+              clearTimeout(timerID);
             //需要延迟的代码 :3秒后延迟跳转到首页，可以加提示什么的
             this.$router.push({
                 path:'/home'

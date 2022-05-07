@@ -68,8 +68,9 @@
     ></audio>
   </div>
 </template>
-
 <script>
+      // :src="`https://music.163.com/song/media/outer/url?id=${id}.mp3`"
+
 // 获取歌曲详情和 歌曲的歌词接口
 import { getSongByIdApi,getLyricByIdApi } from '@/api'
 import { Icon } from 'vant'
